@@ -1,0 +1,162 @@
+        body{
+            margin:0px;
+            border:0px;
+            background-color:#dedede;
+            font-family: '微软雅黑';
+        }
+        h2{
+            font-size:24px;/*文字字号*/
+            color:#333;/*文字颜色*/
+            font-weight:bold;/*字体加粗*/
+        }
+        h3{
+            color:rgb(97,102,98);
+        }
+        /*导航*/
+        header{
+            margin:0px;
+            padding:0px;
+            width:100%;
+            height: 70px;
+            background-color: #333;
+            display:table;
+            vertical-align:middle;
+        }
+        header nav{
+            margin-top:12px;
+            margin-right:20px;
+            float:right;
+            display:table;
+        }
+        header nav ul li{
+            display:inline;
+            margin-left:20px;
+        }
+        header nav ul li a{
+            font-size:12px;
+            color:#fff
+        }
+        header span img{
+            margin-top:10px;
+            margin-left:40px;
+            max-width:200px;
+        }
+        /*文章*/
+        article{
+            margin:20px;
+            padding:20px;
+            background-color:#fff;
+            box-shadow: 2px 2px 2px #999;
+        }
+        article span{
+            color:#939393;
+            font-size:14px;
+        }
+        article time{
+            color:#939393;
+            font-size:14px;
+        }
+        article p{
+            line-height:30px;
+            text-indent:1.5em;
+        }
+        article ul li{
+            list-style:none;
+            line-height:30px;
+        }
+        figure{
+            margin-bottom:16px;
+            padding:8px;
+            text-align:center;
+            width:180px;
+            border:solid 1px #cbcbcb;
+            display:inline-block;
+        }
+        figure img{
+            margin-top:10px;
+            max-width:164px;
+            height:auto;
+        }
+        /*表格*/
+        article table{
+            width:100%;
+            text-align:left;
+            border-collapse:collapse;
+            border:solid #999;
+            border-width:1px;
+        }
+        article table caption{
+            text-align:left;
+        }       
+        article table thead{
+            color:#dedede;
+            background-color:#000;
+        }
+        article table th,article table td{
+            border:solid #999;
+            border-width:0 1px 1px 0;
+            padding-left:5px;
+        }
+        article table tbody{
+            background-color:#fff;
+        }
+        article table tfoot{
+            background-color:#cbcbcb;
+            font-weight:bold;/*字体加粗*/
+        }
+        /*侧边栏*/
+        aside{
+            float: right;
+            width: 350px;
+            margin-top:40px;
+            margin-right:20px;
+            padding:20px;            
+            background-color:#fff;
+            box-shadow: 2px 2px 2px #999;
+        }
+        aside h2{
+            padding:8px 0 8px 12px;
+            border-left:solid 5px #898989;
+            font-size:16px;
+        }
+        aside form table{
+            border:none;
+        }
+        aside form table td{
+            border:none;
+            vertical-align:top;
+        }
+        .input-title{
+            text-align:right;
+            width:150px;
+            display:inline-block;
+        }
+        .input-body{
+            text-align:left;
+            width:150px;
+            display:inline-block;
+        }
+        aside form table td p{
+            font-size:12px;/*文字字号*/
+            color:#939393;/*文字颜色*/
+        }
+        .submit_field{
+            height:40px;
+            background-color:blue;
+            display:block;
+            width:100%;
+            border:0;
+            border-radius:4px;
+            color:#fff;
+            font-weight:bold;/*字体加粗*/
+        }
+        /*footer*/
+        footer{
+            width: 100%;
+            height: 60px;
+            color:#fff;
+            background-color:#000;
+            line-height:70px;
+            text-align:center;
+            font-size:12px;
+        }

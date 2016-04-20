@@ -16,14 +16,99 @@
         
         <nav>
             <ul>
-                <li><a href="#" style="text-decoration:none;">·导航链接一</a></li>
-                <li><a href="#" style="text-decoration:none;">·导航链接二</a></li>
-                <li><a href="#" style="text-decoration:none;">·导航链接三</a></li>
-                <li><a href="#" style="color:#939393;text-decoration:none;">·导航链接四</a></li>
+                <li><a href="#" style="text-decoration:none;">导航链接一</a></li>
+                <li><a href="#" style="text-decoration:none;">导航链接二</a></li>
+                <li><a href="#" style="text-decoration:none;">导航链接三</a></li>
+                <li><a href="#" style="color:#939393;text-decoration:none;">导航链接四</a></li>
             </ul>
         </nav>
 
     </header>
+
+    <aside class="article">
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="email" class="input-title">请输入邮箱地址</label>
+                    </td>
+                    <td class="input-body">
+                        <input type="email" id="email" placeholder="这是一个文本输入框" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="input-body">
+                        <p>邮箱地址请按要求格式输入</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password" class="input-title">请输入密码</label>
+                    </td>
+                    <td class="input-body">
+                        <input type="email" id="email" placeholder="这是一个文本输入框" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password" class="input-title">请重复输入密码</label>
+                    </td>
+                    <td class="input-body">
+                        <input type="email" id="email" placeholder="这是一个文本输入框" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="input-body">
+                        <p>密码请为6-16位英文数字</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="input-title">性别</label>
+                    </td>
+                    <td class="input-body">
+                        <input type="radio" id="male" value="男" name="sex" checked /><label for="male">男</label>
+                        <input type="radio" id="female" value="女" name="sex" checked /><label for="female">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="input-title">城市</label>
+                    </td>
+                    <td class="input-body">
+                        <select name="city" id="city">
+                            <option value="北京" selected>北京</option>
+                            <option value="上海">上海</option>
+                            <option value="广州">广州</option>
+                            <option value="深圳">深圳</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="input-title">爱好</label>
+                    </td>
+                    <td class="input-body">
+                        <input type="checkbox" id="sport" /><label for="sport">运动</label>
+                        <input type="checkbox" id="art" /><label for="art">艺术</label>
+                        <input type="checkbox" id="science" /><label for="science">科学</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="input-title">个人描述</label>
+                    </td>
+                    <td class="input-body">
+                        <textarea name="dectiption" id="description" cols="21" rows="7">这是一个多行输入框，输入您的个人描述</textarea>
+                    </td>
+                </tr>
+            </table>
+            <input class="submit_field" type="submit" value="确认提交" />
+        </form>
+    </aside>
 
     <article class="article">
         <h2>文章一级标题</h2>
@@ -47,6 +132,7 @@
             这是一个很长很长的段落,这是一个很长很长的段落。
         </p>
     </article>
+
     <article class="article">
         <h2>另一篇文章一级标题</h2>
         <h3>文章二级标题</h3>
@@ -168,94 +254,11 @@
         </style>
     </article>
 
-    <aside class="article">
-        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-        <form action="">
-            <table>
-                <tr>
-                    <td>
-                        <label for="email" class="input-title">请输入邮箱地址</label>
-                    </td>
-                    <td class="input-body">
-                        <input type="email" id="email" placeholder="这是一个文本输入框" />
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="input-body">
-                        <p>邮箱地址请按要求格式输入</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password" class="input-title">请输入密码</label>
-                    </td>
-                    <td class="input-body">
-                        <input type="email" id="email" placeholder="这是一个文本输入框" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password" class="input-title">请重复输入密码</label>
-                    </td>
-                    <td class="input-body">
-                        <input type="email" id="email" placeholder="这是一个文本输入框" />
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="input-body">
-                        <p>密码请为6-16位英文数字</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="input-title">性别</label>
-                    </td>
-                    <td class="input-body">
-                        <input type="radio" id="male" value="男" name="sex" checked /><label for="male">男</label>
-                        <input type="radio" id="female" value="女" name="sex" checked /><label for="female">女</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="input-title">城市</label>
-                    </td>
-                    <td class="input-body">
-                        <select name="city" id="city">
-                            <option value="北京" selected>北京</option>
-                            <option value="上海">上海</option>
-                            <option value="广州">广州</option>
-                            <option value="深圳">深圳</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="input-title">爱好</label>
-                    </td>
-                    <td class="input-body">
-                        <input type="checkbox" id="sport" /><label for="sport">运动</label>
-                        <input type="checkbox" id="art" /><label for="art">艺术</label>
-                        <input type="checkbox" id="science" /><label for="science">科学</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="input-title">个人描述</label>
-                    </td>
-                    <td class="input-body">
-                        <textarea name="dectiption" id="description" cols="21" rows="7">这是一个多行输入框，输入您的个人描述</textarea>
-                    </td>
-                </tr>
-            </table>
-            <input class="submit_field" type="submit" value="确认提交" />
-        </form>
-    </aside>
-    <footer id="footer">
+    <footer class="footer">
         <p>
             <abbr>版权所有&copy;</abbr>
         </p>
     </footer>
+      
 </body>
 </html>

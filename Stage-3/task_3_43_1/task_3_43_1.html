@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>task_3_43_1</title>
+    <style>
+        /*一张图片*/
+        .image11{
+	    	position: relative;
+	    	width: 100%;
+	    	height: 100%;
+	    }
+	    .g-wrap img{
+	    	position: absolute;
+	    	object-fit:cover;
+	    	overflow: hidden;
+	    }
+
+		/*二张图片*/
+		.image21{
+            width: 66.666667%;
+            height: 100%;
+            -webkit-clip-path: polygon(0% 0%,100% 0%,50% 100%,0% 100%);
+			/*-webkit-clip-path: polygon(0 0, 66.666666% 0, 33.333333% 100%, 0% 100%);*/
+			clip-path: polygon(0 0, 66.666666% 0, 33.333333% 100%, 0% 100%);
+		}
+		.image22{
+            position:relative;
+            width: 66.667%;
+            height: 100%;
+            left: 33.333%;
+            top:-101%;
+            -webkit-clip-path: polygon(50% 0%,100% 0%,100% 100%,0% 100%);
+			/*-webkit-clip-path: polygon(66.666666% 0, 100% 0, 100% 100%, 33.333333% 100%);*/
+			clip-path: polygon(66.666666% 0, 100% 0, 100% 100%, 33.333333% 100%);
+		}
+
+	    /*三张图片*/
+	    .image31{
+		    width: 50%;
+		    height: 100%;
+	    }
+	    .image32{
+            position:relative;
+            top:-50%;
+		    width: 50%;
+		    height: 50%;
+	    }
+	    .image33{
+            position:relative;
+		    width: 50%;
+		    height: 50%;
+            top:-50%;
+            left:50%;
+	    }
+
+	    /*四张图片*/
+	    .image41{
+	    	width: 50%;
+	    	height: 50%;		
+	    }
+	    .image42{
+	    	left: 50%;
+            width: 50%;
+	    	height: 50%;
+	    }
+	    .image43{
+            position:relative;
+	    	top:-1%;
+            width: 50%;
+	    	height: 50%;
+	    }
+	    .image44{
+            position:relative;
+	    	top: -1%;
+	    	/*left: 50%;*/
+            width: 50%;
+	    	height: 50%;
+	    }
+
+		/*五张图片*/
+		.image51{
+			width: 66.666666%;
+			height:66.666666%;
+		}
+		.image52{
+            position:relative;
+			/*left: 66.666666%;*/
+			width:33.333333%;
+			height:33.333333%;
+            top: -33.333333%;
+		}
+		.image53{
+            position:relative;
+			top:-33.333333%;
+			width: 33.333333%;
+			height:33.333333%;		
+		}
+		.image54{
+            position:relative;
+			top:-33.333333%;
+			/*left: 33.333333%;*/
+			width: 33.333333%;
+			height:33.333333%;		
+		}
+		.image55{
+            position:relative;
+			top:-34%;
+			/*left: 66.666666%;*/
+			width: 33.333333%;
+			height: 66.666666%;
+		}
+
+		/*六张图片*/
+		.image61{
+			width: 66.666666%;
+			height: 66.666666%;
+		}
+		.image62{
+            position:relative;
+			top: -33.333333%;
+			width: 33.333333%;
+			height: 33.333333%;
+		}
+		.image63{
+            position:relative;
+            left: 66.666666%;
+            top: -33.333333%;
+			width: 33.333333%;
+			height: 33.333333%;
+		}
+		.image64{
+            position:relative;
+			/*top:-66.666666%;*/
+            left: -33.333333%;
+			width: 33.333333%;
+			height: 33.333333%;		
+		}
+		.image65{
+            position:relative;
+			/*top:-66.666666%;*/
+            left: -33.333333%;
+			width: 33.333333%;
+			height: 33.333333%;		
+		}
+		.image66{
+            position:relative;
+			top: -33.333333%;
+			left: 66.666666%;
+			width: 33.333333%;
+			height: 33.333333%;		
+		}
+    </style>
+</head>
+<body>
+    <div id="gallery"></div>
+    <script>       
+        k = 0;
+        var thing = setInterval(gallery, 2000);
+        function gallery() {
+            var i = 0;
+            k++;
+            if(k>5){
+                clearInterval(thing);
+            }
+            var gallery = document.getElementById('gallery');
+            var frame = document.createElement("div");
+            frame.style.display = "block";
+            frame.style.height = "600px";
+            frame.style.width = "600px";
+            while (i < k) {
+                i++;
+                var imageDom = document.createElement("img");
+                var url = "images/" + i + ".jpg";
+                imageDom.className = "image" + k + i;
+                imageDom.setAttribute("src", url);
+                frame.appendChild(imageDom);
+            }
+            gallery.appendChild(frame);
+        }       
+    </script>
+</body>
+</html>
